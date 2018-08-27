@@ -71,14 +71,14 @@
     <p>
       <label class="form_label" for="contact_message">Senda með hlekk á upplýsingabeiðni:</label>
       <%=request_link(@last_request) %>
-      <%= submit_tag "remove", :name => 'fjarlægja' %>
+      <%= submit_tag "fjarlægja", :name => 'remove' %>
     </p>
   <% end %>
   <% if !@last_body.nil? %>
     <p>
       <label class="form_label" for="contact_message">Senda með hlekk á stjórnvald:</label>
       <%=public_body_link(@last_body) %>
-      <%= submit_tag "remove", :name => 'fjarlægja' %>
+      <%= submit_tag "fjarlægja", :name => 'remove' %>
     </p>
   <% end %>
 
@@ -90,7 +90,7 @@
   <div class="form_button">
     <%= hidden_field_tag(:submitted_contact_form, 1) %>
     <%= submit_tag "Senda skilaboð til upplysingabeidnir.is", :data => { :disable_with => "Sendi..." } %>
-
+    
   </div>
 
 <% end %>
