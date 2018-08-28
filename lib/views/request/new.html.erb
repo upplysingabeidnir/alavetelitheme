@@ -199,7 +199,6 @@
     </div>
 
     <div id="request_form" class="request_form">
-      # <% if !@batch && @info_request.public_body.info_requests_hidden_count >= 0 %>
         <fieldset id="request_personal_switch" class="request_personal_switch">
           <legend>Are you asking for <strong>personal information</strong> that should be confidential?</legend>
           <p>This includes <em>police incident reports</em>, <em>court records</em>, <em>medical records</em>, <em>paperwork for insurance or court</em>, etc.</p>
@@ -215,7 +214,6 @@
               using this site. If you do you will be posting your information publicly on the internet for anyone to see.</p>
           </div>
         </fieldset>
-      # <% end %>
       <div id="request_subject" class="request_subject">
         <p>
           <label class="form_label" for="typeahead_search"><%= _('Summary') %></label>
