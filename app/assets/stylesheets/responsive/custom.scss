@@ -934,3 +934,27 @@ dt {
 .pro-pill {
   background-color: desaturate(darken($color_secondary, 10%), 5%);
 }
+
+// Requests for personal information
+.request_personal_message {
+  display: none;
+
+  input#request_personal_switch_yes:checked ~ & {
+    display: block;
+  }
+
+  .request_email {
+    display: block;
+    margin: 1em 0;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+#request_personal_switch legend {
+  font-weight: normal;
+}
+
+.personal_request_switcher_focused ~ * {
+   display: none;
+ }
