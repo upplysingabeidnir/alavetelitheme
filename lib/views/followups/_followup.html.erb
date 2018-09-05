@@ -146,7 +146,7 @@
       -->
       <p>
         <%= hidden_field_tag 'submitted_followup', 1 %>
-        <%= hidden_field_tag 'sort_normal', 1 %>
+        <%= hidden_field_tag "outgoing_message[what_doing]", "normal_sort" %>
         <% if @internal_review %>
           <%= hidden_field_tag(:internal_review, 1 ) %>
         <% end %>
